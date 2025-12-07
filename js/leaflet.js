@@ -9,3 +9,8 @@ let bounds = [[51.228271, 4.401558], [51.220327, 4.430393]];
 
 
 L.rectangle(bounds, { color: "#e60005", weight: 1 }).addTo(map);
+
+let apMarker = L.marker([51.224416, 4.415183])
+  .addTo(map)
+  .bindPopup("<strong>GEMEENTE ANTWERPEN")
+  .openPopup();
